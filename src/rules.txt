@@ -1,0 +1,1923 @@
+INTRODUCTION
+
+Firetop Mountain - the legendary locale of the ritual battles between
+the Mages of Old.  A place where only the greatest survive, and where
+the careless quickly meet their end.
+
+"Firetop Mountain" is a play-by-email game concerning the conflict
+between powerful wizards in a duel of sorcery.  The opponents perform
+magical gestures with their hands to create their supernatural weapons
+- spells.  Some spells are so potent as to be able to blind a person,
+call forth terrifying creatures, or even kill the unfortunate victim
+instantly.  Consequently, wizards must rely on their own cunning to be
+able to time enough defensive spells to avoid the brunt of the
+adversary's attack, yet deliver sufficient offensive spells of their
+own to crack the magical armour of the opponent, and kill the wizard
+outright.
+
+The game is an attempt to capture the spirit of such a battle in as
+simple yet exciting way as possible.  The inventor pointed out that he
+has never been involved in a magical duel but would be interested to
+discover how realistic the game is for those who have been involved in
+such a bout.
+
+A NOTE ABOUT THESE RULES
+
+They look big, don't they?  Don't be daunted - the bulk of them is the
+reference section that contains the detail of every spell that you can
+cast.
+
+The best way to approach these might be to skim over the first few
+sections to get a feel for the rules, then look at the example game,
+which is at the end.  This will give you a good overview of the game,
+and you will then be able to look at the spell details as you find you
+want to know about them.
+
+Another good way would be to look at the HTML version at:
+
+ http://www.gamerz.net/~fm/
+
+ADMISSION TO FIRETOP MOUNTAIN
+
+In order to register mages to take part in battles on Firetop
+Mountain, you must sign on as a User.  This is achieved by sending an
+e-mail to the server with the following details:
+
+It must go
+
+  To:fm@gamerz.net
+
+with
+ Subject: FM Orders
+
+and with the command
+
+ NewUser UserName Password
+
+in the body. "UserName" is the name that you want to be known by on
+the server, and "Password" is the password you will use to identify
+valid orders in the future.
+
+For example: NewUser Fred Freddy
+
+You use this User name and password with all subsequent orders you
+send to the server.  Once you have a reply from the server
+acknowledging your user name, you can register one or more mages, by
+sending in a registration command.  For example:
+
+ User Fred Freddy
+ Register Merlyn
+
+Once you have registered your Mage, you will receive a list of all the
+living mages and their scores, and you can proceed to challenge one or
+more of them to a duel!
+
+CHALLENGING YOUR OPPONENT TO A BATTLE
+
+When you register (and at any other time you specify) you receive a
+copy of the latest scores and status of all the Wizards of Firetop
+Mountain.  You can pick one or more of these who are not currently
+engaged in battle and issue a challenge using the NEWGAME order.  The
+controllers of the wizards that you challenge will receive an e-mail
+notifying them of the challenge.  When they accept, you will receive
+an e-mail telling you that the battle is ready to commence.
+
+Alternatively, you can issue the CHALLENGES order and you will receive
+a list of 'Open' challenges.  You can join in one of these games if
+you like, by using the ACCEPT command.
+
+The battle then takes place at a pace set by the players.  Each round,
+each player may have to submit orders.  The server waits until all the
+required orders are received, then processes the round and mails out
+the results.
+
+At the end of these rules you will find a list of the commands that
+the server accepts, including REGISTER, NEWGAME, CHALLENGES and ACCEPT.
+You can try these commands out before even proceeding with the rest of
+the rules, if you like!  There is commentary on an example game at the
+end of this rules.
+
+
+Slow Games
+
+On average, people playing games by e-mail tend to like to have a few
+turns per day.  Some like a lot more, and some are a little slower.
+If you want to play at a particular speed, you should check with your
+opponent(s) about how fast they will be able to play before accepting
+a challenge.  Typically the challenger will issue a comment with the
+challenge indicating how fast the game is expected to proceed.
+
+Really slow games will not be allowed to drag on forever.  Every so
+often (about twice a week) the janitor runs a program which checks
+to see that all the games are progressing.  If a player has not
+submitted orders for a week, the server will send that player a
+'reminder' notice.  That player will continue to get reminder notices
+until either orders are submitted or two weeks has passed.  Once
+three weeks has passed without a player submitting orders, the server
+will close the game, declaring the opponent to be the winner and
+killing off the timed-out mage.
+
+If you have to go away for some time in the middle of a game, you can
+contact the game administrator and be put on a list of people 'on
+vacation'.  These people are excused from being slow.
+
+
+THE TURN
+
+Once a challenge has been issued and accepted, each turn the players
+send in to the server the directions for their wizards and the
+monsters under their wizard's control.  After orders for the players
+have been received, the server deals with them as if the actions
+specified therein occur simultaneously. Certain spells may alter these
+circumstances. For example, you don't get to see all of your
+opponent's moves if their wizard is invisible.
+
+Each turn, a player's wizard can either gesture with their hands to
+weave part of a spell, stab with their knife, or do nothing. They use
+both hands and each hand can act independently or in concord with the
+other.
+
+Monsters will obey their master's commands exactly. Monster's may
+change controller as a result of enchantment. From that point on the
+monster's attacks are directed by the new master. Monsters may make a
+single attack each turn against a target chosen by their master or (as
+a result of a spell) they may spend the turn doing nothing. Monsters
+will attack on the turn in which they are summoned.
+
+Monsters are untrained, unintelligent creatures and can neither
+gesture nor cast spells.  Players personally acquainted with monsters
+who wish to vouch for their ability to cast spells are requested to
+keep quiet.
+
+
+GESTURES
+
+Spells are created by strings of gestures made with the hands. There are
+five single-handed magical gestures:
+
+ the wriggled fingers (F)
+ the proffered palm (P)
+ the snap (S)
+ the wave (W)
+ the digit pointing (D)
+
+There is one two-handed magical gesture: the clap (c). Both hands must
+be specified as clapping in the same turn for this gesture to be useful.
+
+There also two non-magical gestures:
+
+stab (>)
+nothing (-)
+
+The abbreviation for each gesture is used when specifying directions
+for the turn.
+
+Spells are cast using an ordered series of gestures. A list of spells
+and the gestures used to cast them is given below. For example, three
+wriggling finger gestures on consecutive turns (noted as F F F) evokes
+a Paralysis spell. Note, however, is that a single gesture can be used
+in more than one series and, hence, can be used to cast more than one
+spell.
+
+A single gesture may be used in more than one spell provided that: the
+gestures have been made in the correct sequence without interruption
+no more than one spell is created per gesture and all gestures for one
+spell are made with the same hand.
+
+For instance, the left hand could cast the F F F above. In the
+following four turns the left hand could gesture (S S D D) to finish
+off a Fireball spell since the last five gestures would then be
+(F S S D D). Another alternative is to simply perform another (F) for
+a second Paralysis spell, as the last three gestures are still
+(F F F). If spells are used in a wise manner and frequently overlap,
+the overall number of gestures needed to cast them can be cut
+dramatically.
+
+If a single gesture can be construed to be the final gesture of two or
+more spells then the caster chooses which one to cast. For example,
+the last two gestures of a Finger Of Death are the same as Magic
+Missile, yet only on odd occasions would the latter spell be chosen in
+preference to the former.
+
+Another example of the one-spell-per-gesture concept is the following:
+
+            Right hand:     P P W S    Last 4 gestures form Invisibility
+            Left hand:      W W W S    Last 3 gestures form Counter Spell
+        
+The trouble here is the Invisibility spell needs both hands to perform
+certain gestures. However, since the final S of the left hand cannot
+be used to cast two spells, it is clear that a choice must be made
+between the W W S of the Counter Spell and the P P w s of the
+Invisibility.
+
+Here and in the rest of the document a lowercase letter, denotes a
+gesture to be performed with both hands simultaneously.  E.g. w
+denotes a W by each hand.
+
+If the caster completes a series that casts a spell, intentionally or
+unintentionally, the spell must be cast. For example Fire Storm gets
+you no matter where it is released. Note also that some of the larger
+spells have smaller ones incorporated within their casting series.
+
+All spells and monsters need a target, someone or something to be the
+victim.  Each spell (and the "stab" gesture) has a default target,
+which is where it will go if you do not specify the target for the
+casting hand.  In general, spells with beneficial effects are
+defaulted to have the caster as the target.  Spells with adverse
+effects are defaulted to have the opposing Wizard as the target.
+However, if in doubt, specify the target of your spell!
+
+Specifying the target of each spell to be cast (if the target is not
+the default target for the spell) is part of writing the orders for
+each round.
+
+Spells can be aborted at any point during their development simply by
+performing a gesture which breaks up the series for that spell.  There
+is no penalty, save having wasted some time.  Note that no spells
+contain Stab or Nothing.  Also note that nonsense (Zen?) gestures such
+as C with just one hand are considered the same as Nothing (-) (which
+is a fairly Zenlike concept, in and of itself).  Consequently, after
+one of these options is taken, all spells for that hand must start
+from scratch.  Note also that wizards carry only one dagger and so
+cannot stab with both hands at the same time.  Wizards can, however,
+change hands for stabbing without wasting time.  Such are the
+advantages of physical violence.
+
+Although all spells go off "at the same time", it is sometimes useful
+to know which takes effect first.  For example, does a Resist Heat
+save you from a Fireball cast in the same turn?  These types of
+questions can be answered by referring to the Spell Casting Series
+table towards the end of these rules.  If this table doesn't answer
+your question, then you may need to find out the answer by
+experimentation!
+
+Before the battle commences, the referee casts a Dispel Magic followed
+by an Anti Spell at each of the wizards, and each wizard bows to the
+opponent, so they cannot commence gesturing prematurely in order to
+nearly finish a spell when they start the battle. For the same reason,
+being made resistant to fire in your last battle doesn't do you any
+good in the next.
+
+
+MONSTERS
+
+Monsters are created by SUMMON spells.  Monsters usually have a
+"controller" who can direct who they will attack.  The control of a
+monster can change hands if a Charm Monster spell is cast on the
+monster.
+
+All spells have a target, and SUMMON spells are no different.
+
+The target of a SUMMON spell determines who the controller of the
+    ^^^^^^                                      ^^^^^^^^^^
+monster will be.
+
+Read that last sentence again.  It is very important, and not what
+everyone expects!
+
+If the target is a Wizard, that Wizard will become the controller.  If
+the target is a monster, then that monster's controller will be the
+controller of the new monster.
+
+The initial target of the monster's attacks will be the opponent of
+its controller specified for the SUMMON spell.  The TARGET command can
+be used to change the target of the monster.
+
+
+WINNING
+
+Each wizard can sustain fourteen points of damage but dies when
+fifteen or more points of damage are done.  When only one wizard
+survives (if any do!) that wizard is declared the winner.  The winner
+receives points equal to the number of defeated wizards.  Simultaneous
+death is a posthumous draw. Damage to wizards and monsters is
+cumulative (so you don't have to do it all in one go!).
+
+Wizards may also choose to surrender. This is not a spell, but a pair
+of P gestures made by both hands at the same time signals your
+surrender. If you surrender, you lose one point but you get to live on
+to fight another day.  See the final section for details.
+
+When a wizard dies, their score dies with them.  This is hopefully a
+powerful incentive for surrendering before it's too late.
+
+
+SPELLS
+
+Below you will find a list of spells (plus Stab and Surrender), what
+they do, how long they last, and the series of gestures used to cast
+them. In the notation used for gesture series, upper case letters are
+used as abbreviations except when two simultaneous single-handed
+gestures are required. In those cases a lower case letter is used
+instead.  Finally there is a short list of spells, intended for use as
+a reference sheet for players during the battle.
+
+
+PROTECTION SPELLS
+
+SHIELD (gesture P)
+
+This spell protects the subject from all attacks from monsters (that
+is, creatures created by a summoning spell), from missile spells, and
+from stabs by wizards. The shield will block any number of such
+attacks but lasts for only one round. The shield protects the subject
+on the turn in which it is cast.
+
+
+REMOVE ENCHANTMENT (gestures P D W P)
+
+Terminates the effects of all Enchantment Spells that have been cast
+on the subject including those that are cast on the subject at the
+same time as the Remove Enchantment.
+
+Effects which have already passed are not reversed.  For example, the
+victim of a Blindness spell would not be able to see what their
+opponent's gestures were on the same turn that the Blindness is
+removed. Note that all enchantments are removed and the caster may not
+pick and choose.  Remove Enchantment also destroys any monster upon
+which it is cast, although the monster can attack in that turn.
+Wizards suffer no adverse effects from this spell, aside from the
+removal of their enchantments.
+
+
+MAGIC MIRROR (gestures c w)
+
+Spells cast on a subject protected by this spell are reflected back
+upon the caster of that spell. When a spell is reflected the very
+internals of the spell is also affected, so that not only do
+the caster become the target, but the subject of the mirror
+also assumes the role of caster of the reflected spell.
+The Magic Mirror protects only during the turn in which it was cast.
+The protection includes spells like Magic Missile and Lightning Bolt
+but does not include attacks by monsters or stabs from wizards.
+In case of multiple mirrors in a melee, a Magic Mirror will not
+reflect any spells originating from the wizard that the mirror
+protects, because the magic of the spell then already will be present
+at the inside of the mirror.
+
+The mirror is countered totally if either a Counter Spell or Dispel
+Magic is cast on the subject in the same turn as the mirror.  The
+mirror has no effect on spells which affect more than one person (such
+as Fire Storm).  Two mirrors cast at one subject simultaneously combine
+to form a single mirror.
+
+
+
+COUNTER SPELL (gestures W P P or W W S)
+
+Any other spell cast upon the subject in the same turn has no
+effect.  In the case of blanket spells, which affect more than one
+person, the subject of the Counter Spell alone is protected.  For
+example, a Fire Storm spell could kill off a monster but not if a
+Counter Spell were cast on the monster in the same turn.  Everyone
+else would be affected as usual by the Fire Storm unless they had
+their own protection.
+
+The Counter Spell will cancel all the spells cast at the subject for
+that turn (including Remove Enchantment and Magic Mirror) except
+Dispel Magic and Finger Of Death. It will combine with another spell
+of its own type for the same effect as if it were alone.  The Counter
+Spell will also act as a Shield for its Target.
+
+
+DISPEL MAGIC (gestures c D P W)
+
+This spell acts as a combination of Counter Spell and Remove
+Enchantment, but its effects are universal rather than limited to the
+subject of the spell. It will stop any spell cast in the same turn
+from working (apart from another dispel magic spell which combines
+with it for the same result), and will remove all enchantments from
+all beings before they have effect. In addition, all monsters are
+destroyed although they can attack that turn. Counter Spells and Magic
+Mirrors have no effect. The spell will not work on stabs or
+surrenders. As with a Counter Spell it also acts as a Shield for its
+subject.
+
+
+RAISE DEAD (gestures D W W F W c)
+
+The subject of this spell might be any dead human or a dead monster.
+When the spell is cast, the dead is braught back to life and all
+damage is cured. All enchantments are also removed (as per the spell)
+so any diseases or poisons will be neutralized and all other
+enchantments removed. The subject will be able to act normally
+immediately after the spell is cast. On the turn a monster is raised
+it may attack. Wizards may begin gesturing on the turn following their
+return from the dead.
+
+This is the only spell which affects the dead. It therefore cannot
+be stopped by a counter-spell cast at the dead being. A dispel magic
+spell will prevent its effect, since dispel magic affects all spells
+no matter what their subject.
+
+If the spell is cast on a live individual, the effect is that of a
+cure light wounds recovering five points of damage, or as many as have
+been sustained if less than five. Note that any diseases the live
+subject might have are not cured. If the target is subject to both
+Raise Dead and Finger of Death, the two spells will cancel each other.
+
+
+CURE LIGHT WOUNDS (gestures D F W)
+
+If the subject has received damage then he is cured by one point as if
+that point had not been inflicted.  Thus, for example, if a wizard had
+five hit points left and was hit simultaneously by a Cure Light
+Wounds and a Lightning Bolt he would finish that turn on one hit
+point rather than zero (or six if there had been no Lightning Bolt).
+The effect is not removed later by a Dispel Magic or Remove Enchantment.
+
+
+CURE HEAVY WOUNDS (gestures D F P W)
+
+This spell is similar to Cure Light Wounds in effect but two points of
+damage are cured. Note that only one point is cured if only one point
+of damage has been sustained or no points is cured if the subject is
+completely undamaged.  This spell will also cure any diseases the
+subject might have at the time.
+
+
+SUMMONING SPELLS
+
+SUMMON GOBLIN (gestures S F W)
+
+This spell creates a goblin under the control of the target of the
+spell (or the target's controller, if the target is a monster). The
+goblin can attack immediately and its victim will be opponent of its
+controller. It does one point of damage to its victim per turn and is
+destroyed after one point of damage is inflicted upon it.  The
+summoning spell cannot be cast at an elemental, and if cast at
+something which doesn't exist, the spell has no effect.
+
+
+SUMMON OGRE (gestures P S F W)
+
+This spell is the same as Summon Goblin but the ogre created inflicts
+and is destroyed by two points of damage rather than one.
+
+
+SUMMON TROLL (gestures F P S F W)
+
+This spell is the same as Summon Goblin but the troll created inflicts
+and is destroyed by three points of damage rather than one.
+
+
+SUMMON GIANT (gestures W F P S F W)
+
+This spell is the same as Summon Goblin but the giant created inflicts
+and is destroyed by four points of damage rather than one.
+
+
+SUMMON ICE ELEMENTAL (gestures c S W W S)
+
+This spell creates an ice elemental.  Casting this spell will cause an
+elemental to be created, even if no target is specified.  See below for
+more details.
+
+
+SUMMON FIRE ELEMENTAL (gestures c W S S W)
+
+This spell creates a fire elemental.  Casting this spell will cause an
+elemental to be created, even if no target is specified.
+
+The elemental will, for that turn and until destroyed, attack everyone
+who is not resistant to its type (heat or cold), causing three points
+of damage per turn. The elemental takes three points of damage to be
+killed but may be destroyed by spells of the opposite type (e.g. Fire
+Storm, Resist Cold or Fireball will kill an ice elemental), and will
+also neutralize the cancelling spell. Elementals will not attack on the
+turn they are destroyed by such a spell. An elemental will also be
+engulfed and destroyed by a storm of its own type but, in such an
+event, the storm is not neutralized although the elemental still does
+not attack in that turn. Two elementals of the opposite type will also
+destroy each other before attacking, and two of the same type will
+join together to form a single elemental of normal strength. Note that
+only wizards or monsters resistant to the type of elemental, or who
+are casting a spell which has the effect of a Shield do not get
+attacked by the elemental.  Casting a Fireball upon yourself when
+being attacked by an ice elemental is no defence! (Cast it at the
+elemental...)
+
+
+DAMAGING SPELLS
+
+MAGIC MISSILE (gestures S D)
+
+This spell creates a material object of hard substance which is hurled
+towards the subject of the spell and causes him one point of
+damage. The spell is thwarted by a Shield in addition to the usual
+Counter Spell, Dispel Magic and Magic Mirror (the latter causing it to
+hit whoever cast it instead).
+
+
+FINGER OF DEATH (gestures P W P F S S S D)
+
+Kills the subject stone dead. This spell is so powerful that it is
+unaffected by a Counter Spell, although a Dispel Magic spell cast upon
+the final gesture will stop it. If the target is subject to both Raise
+Dead and Finger of Death, the two spells will cancel each other.
+The usual way to prevent being harmed by this spell is to disrupt it
+during casting using, for example, an Anti Spell.
+
+
+LIGHTNING BOLT (gestures D F F D D or W D D c)
+
+The subject of this spell is hit by a bolt of lightning and sustains
+five points of damage. Resistance to heat or cold is irrelevant. There
+are two gesture combinations for the spell, but the shorter one may be
+used only once per battle by any wizard. The longer one
+may be used without restriction. A Shield spell offers no defence.
+
+
+CAUSE LIGHT WOUNDS (gestures W F P)
+
+The subject of this spell is inflicted with two points of damage.
+Resistance to heat or cold offers no defence. A simultaneous Cure
+Light Wounds will serve only to reduce the damage to 1 point. A Shield
+has no effect.
+
+
+CAUSE HEAVY WOUNDS (gestures W P F D)
+
+This has the same effect as Cause Light Wounds but inflicts three
+points of damage instead of two.
+
+
+FIREBALL (gestures F S S D D)
+
+The subject of this spell is hit by a ball of fire and sustains five
+points of damage unless he is resistant to fire. If at the same time
+an Ice Storm prevails, the subject of the Fireball is instead not
+harmed by either spell, although the storm will affect others as
+normal. If directed at an ice elemental, the fireball will destroy it
+before it can attack. Fire elementals are not harmed by a fireball.
+
+
+FIRE STORM (gestures S W W c)
+
+Everything not resistant to heat sustains 5 points of damage that
+turn.  The spell cancels wholly, causing no damage, with either an Ice
+Storm or an ice elemental.  It will destroy but not be destroyed by a
+fire elemental.  Two Fire Storms act as one.
+
+
+ICE STORM  (gestures W S S c)
+
+Everything not resistant to cold sustains 5 points of damage that
+turn.  The spell cancels wholly, causing no damage, with either a Fire
+Storm or a fire elemental, and will cancel locally with a Fireball.  It
+will destroy but not be destroyed by an ice elemental.  Two Ice Storms
+act as one.
+
+
+ENCHANTMENT SPELLS
+
+AMNESIA (gestures D P P)
+
+If the subject of this spell is a wizard, next turn he will repeat
+identically the gestures he made in the current turn, including stabs.
+
+If the subject of the spell is a monster or elemental, it forgets to
+attack in that round.  If the subject is simultaneously the subject of
+any of Confusion, Charm Person, Charm Monster, Fear or another Amnesia
+then none of the spells work.
+
+
+CONFUSION (gestures D S F)
+
+If the subject of this spell is a wizard, next turn he submits orders
+as usual.  However, during resolution of the round, the server will
+randomly determine which hand is affected, and will randomly replace
+the ordered gesture with one of the six possible spell gestures.
+
+If the subject of the spell is a monster, it attacks at random that
+turn. If the subject is also the subject of any of: Amnesia,
+Confusion, Charm Person, Charm Monster or Fear, none of the spells
+work.
+
+
+CHARM PERSON (gestures P S D F)
+
+Except for cancellation with other enchantments, this spell only
+affects humans. The subject of the spell submits orders as normal, but
+the caster of the spell also submits an order for one of the subject's
+hands, using the command "DIRECT". The server uses the order submitted
+by the caster for the next turn. If the caster do no submit any
+"DIRECT" command the following turn, the target will do his or her
+gestures as normal. If the subject is only so because of a reflection
+from a Magic Mirror the subject of the mirror assumes the role of caster and
+decides his opponent's gesture. If the subject is also the subject of
+any of Amnesia, Confusion, Charm Person, Charm Monster, or Fear, none
+of the spells work.
+
+
+CHARM MONSTER (gestures P S D D)
+
+Except for cancellation with other enchantments, this spell only
+affects monsters (excluding elementals). Control of the monster is
+transferred to the caster of the spell (or retained by him) as of this
+turn, i.e. the monster will attack whosoever its new controller
+dictates from that turn onwards including that turn. Further charms
+are, of course, possible, transferring as before. If the subject of
+the charm is also the subject of any of: Amnesia, Confusion, Charm
+Person, Charm Monster, Fear, none of the spells work.
+
+
+PARALYSIS (gestures F F F)
+
+If the subject of the spell is a wizard, then on the following turn
+the caster selects one of the wizard's hands and on the that turn that
+hand is paralyzed into the position it was in the turn before. If the
+wizard already had a paralyzed hand, it must be the same hand which is
+paralyzed again. Certain gestures remain the same but if the hand
+being paralyzed is performing a C, S or W it is instead paralyzed into
+F, D or P respectively, otherwise it will remain in the original position
+(this allows repeated stabs).
+
+A favourite ploy is to continually paralyze a hand (F F F F F F etc.)
+into a non P gesture and then set a monster on the subject so that he
+has to use his other hand to protect himself, but then has no defence
+against other magical attacks.
+
+If the subject of the spell is a monster or an elemental it simply
+does not attack in the turn in which the spell was cast.
+
+If the subject of the spell is also the subject of any of Amnesia,
+Confusion, Charm Person, Charm Monster, Fear or another Paralysis,
+the Paralysis does not work.
+
+If the caster does not choose a hand of the target to be paralyzed
+(using the PARALYZE order), a random hand will be paralyzed.
+
+
+FEAR (gestures S W D)
+
+If the subject of this spell is a wizard, then on the turn following
+the casting of this spell, the subject cannot perform a C, D, F or S
+gesture. If the subject of the spell is a monster (excluding
+elementals which are unaffected), it will be too afraid to attack in
+that round.  If the subject is also the subject of Amnesia, Confusion,
+Charm Person, Charm Monster, or another Fear, then none of the spells
+work.
+
+
+ANTI SPELL (gestures S P F P)
+
+On the turn following the casting of this spell, the subject cannot
+include any gestures made on or before this turn in a spell sequence
+and must restart a new spell from the beginning of that spell
+sequence. The spell does not affect spells which are cast on the same
+turn nor does it affect monsters.
+
+
+PROTECTION (gestures W W P)
+
+For this turn and the following 3 turns the subject of this spell is
+protected as if using a Shield spell, thus leaving both hands free.
+Concurrent Shield spells offer no further protection and compound
+Protection spells merely overlap offering no extra cover.
+
+
+RESIST HEAT (gestures W W F P)
+
+The subject of this spell becomes totally resistant to all forms of
+heat attack (Fireball, Fire Storm and fire elementals). Only Dispel
+Magic or Remove Enchantment will terminate this resistance once
+started (although a Counter Spell will prevent it from working if cast
+at the subject at the same time as this spell). A Resist Heat cast
+directly on a fire elemental will destroy it before it can attack that
+turn, but there is no effect on ice elementals.
+
+
+RESIST COLD (gestures S S F P)
+
+The effects of this spell are identical to Resist Heat but resistance
+is to cold (Ice Storm and ice elementals) and it destroys ice
+elementals if they are the subject of the spell but doesn't affect
+fire elementals.
+
+
+DISEASE (gestures D S F F F c)
+
+The subject of this spell immediately contracts a deadly
+(non contagious) disease which will kill him at the end of 6 turns
+counting from the one upon which the spell is cast. The malady is
+cured by Remove Enchantment or Cure Heavy Wounds or Dispel Magic in
+the meantime.
+
+
+POISON (gestures D W W F W D)
+
+This has the same effect as the disease spell, but Cure Heavy Wounds
+does not cure it.
+
+
+BLINDNESS (gestures D W F F d)
+
+For the next 3 turns not including the one in which the spell was
+cast, the subject is unable to see. If he is a wizard, he cannot tell
+what his opponent's gestures are, although he will be informed of any
+which affect him (e.g. summons spells, Magic Missile etc. cast at him)
+but not Counter Spells to his own attacks. Indeed he will not know if
+his own spells work unless they also affect him (e.g. a Fire Storm
+when he isn't resistant to fire.)  He can control his monsters (he can
+say 'Attack that cursed Zarquon'), but he cannot direct his spells at
+things that he cannot see.
+
+Blinded monsters are instantly destroyed and cannot attack in that
+turn.
+
+
+INVISIBILITY (gestures P P w s)
+
+For the next 3 turns not including the one in which the spell was
+cast, the subject of the spell becomes invisible to his opponent and
+all monsters. Any spells he creates that do not affect anyone that is
+visible, and his gestures, cannot be seen by his opponents. 
+
+Spells targeted at invisible mages will miss.  An invisible mage
+cannot be attacked by monsters, although monsters can be directed at
+him in case he becomes visible prematurely. Wizards can still stab and
+direct spells at him, with the same hope.
+
+Any monster made invisible is destroyed due to the unstable nature of
+such magically created creatures, and doesn't get to attack that turn.
+
+
+HASTE (gestures P W P W W c)
+
+For the next 3 turns, the subject (but not his monsters if a wizard)
+makes an extra set of gestures due to being speeded up. This takes
+effect immediately, so that immediately after the turn in which the
+Haste is cast the Hastened wizard gets a "free" set of orders.
+Non-hastened wizards and monsters can see everything the hastened
+individual is doing.
+
+Note that any spells cast by non-hastened wizards do not expire before
+the end of the extra hastened turn. This means that (for example) a
+Shield cast by a non-hastened wizard would also protect him against a
+stab from a hastened wizard in the hastened wizard's free turn.
+
+
+TIME STOP (gestures S P P F D or S P P c)
+
+The subject of this spell immediately takes an extra turn, on which
+no one can see or know about unless they are harmed. All non affected
+beings have no resistance to any form of attack, e.g. a wizard halfway
+through the duration of a Protection spell can be harmed by a monster
+which has had its time stopped. Time stopped monsters attack whoever
+their controller instructs, and time stopped elementals affect
+everyone, resistance to heat or cold being immaterial in that turn.
+
+
+DELAY EFFECT (gestures D W S S S P)
+
+This spell only works if cast upon a wizard. One of the next spells he
+completes, provided it is on one of the next 3 turns, is "banked"
+until needed, i.e. it fails to work until its caster desires. The
+spell to be banked is selected using the DELAY command. Note that
+spells banked are those cast by the subject not those cast at him. The
+target of the spell is banked along with the spell itself (i.e. the
+complete effect of the spell, including target, is what gets saved).
+Remember that P is a Shield spell, and surrender is not a spell. A
+wizard may only have one spell banked at any one time.
+
+
+PERMANENCY (gestures S P F P S D W)
+
+This spell only works if cast upon a wizard. Any spell he completes
+(i.e. completes the gestures of and casts), provided it is on one of the
+next 3 turns, and which falls into the category of "Enchantments"
+(except Anti Spell, Disease, Poison, or Time Stop) can have its effect
+made permanent.
+
+Note that the person who has his spell made permanent does not
+necessarily have to make himself the subject of the spell. A
+Permanency spell cannot increase the duration of another Permanency,
+nor a spell which is being banked by Delay Effect.
+
+Note that an attempt to make permanent an enchantment spell that is
+countered (or fails for any other reason) still uses up the
+Permanency.
+
+
+NON SPELLS
+
+SURRENDER (gestures p)
+
+This is not a spell and consequently cannot be cast at anyone. The
+wizard making these gestures, irrespective of whether they terminate
+spells or not, surrenders and the contest is over.  If the gestures
+_do_ complete spells, those spells will be cast as usual - the
+surrender does not happen until the end of the round.  The
+surrendering wizard is deemed to have lost unless his gestures
+completed spells which killed all remaining opponents, in which
+case he loses no points, but does not get any points either.
+
+Two or more simultaneous surrenders count as a draw, and the victory
+points are divided between the surviving mages ... rounded down.
+
+It is a skill for wizards to work their spells so that they never
+accidentally perform 2 P gestures simultaneously. It is too late to
+surrender on the turn you are killed - if you are killed as you make
+the surrender gesture, you will still die. However, if you live to the
+end of the turn, the referee will cure any diseases, poisons etc. in
+time for your next battle.
+
+
+STAB (gesture >)
+
+This is not a spell but an attack which can be directed at any
+individual monster or wizard. Unless protected in that turn by a
+Shield spell or another spell with the same effect, the being stabbed
+suffers 1 point of damage. The wizard only has one knife so can only
+stab with one hand in any turn, although which hand doesn't
+matter. The stab cannot be reflected by a Magic Mirror or stopped by
+Dispel Magic (although its Shield effect *could* stop the
+stab). Clumsy wizards _are_ allowed to stab themselves. Knives cannot
+be thrown.
+
+
+ORDERS
+
+Orders can be sent in the body of an e-mail:
+
+To: FM@gamerz.net
+
+ with
+
+Subject: FM Orders
+
+An e-mail that you send to the server like this is called an
+'orderset'.
+
+There are two type of orders that you can send to the server:
+'administration orders' and 'mage commands'.
+
+Hopefully it's fairly obvious that 'administration commands' are used
+to tell the server about games and players, whereas 'mage commands' are
+used to tell the server what you want your mage to do.
+
+A summary of the possible administration orders follows:
+
+  NEWUSER <New Username> <New Password>
+  USER <Username> <Password>
+  CHANGEUSER <New UserName>
+
+  SCORES {<Options>}
+  STANDINGS {<Options>}
+  GAMES {<Game Numbers>}
+  LIST {<Game Numbers>}
+  CHALLENGES
+  INFO {<Mage/User List>}
+  RULES
+  HELP
+  FAQ
+  MESSAGE <Mage Name> <Mage/User List>
+  ANNOUNCE <Game Numbers>
+
+  RESEND {<Number>}
+  REPLAY <Game Number> {<Turn Number>}
+  SHOW <Game Numbers>
+  DESCRIBE <Game Numbers>
+  SUBSCRIBE <Game Numbers>
+  STATS {<Options>}
+
+  REGISTER <Mage Name>
+  ADDRESS  <New Address>
+  PASSWORD <New Password>
+  VACATION <Days>
+  RETIRE   <Mage Name>
+  QUIT     <Mage Name>
+
+  NEWGAME  <Mage Name> <Options>
+
+  ACCEPT     <Game Number> <Mage Name> {<Options>}
+  DECLINE    <Game Number> <Mage Name>
+  CHANGEGAME <Game Number> <Mage Name> <Options>
+  OPPOSE     <Game Number> <Mage Name> CHANGE <Number>
+  WITHDRAW   <Game Number> <Mage Name>
+
+
+And here is a summary of the possible 'mage commands':
+
+  MOVE <Game Number> <Mage Name>
+  GAME <Game Number> <Mage Name>
+  MAGE <Mage Name>
+
+  TURN <Turn Number>
+
+  LH <Gesture>
+  RH <Gesture>
+
+  TARGET <Hand> <Target Name>
+  TARGET <Monster Name> <Victim Name>
+
+  CHOOSE <Hand> <Spell Name>
+
+  PERMANENT <Hand>
+  PARALYZE <Hand> <Mage Name>
+  DIRECT <Hand> <Gesture> <Mage Name>
+  DELAY <Hand>
+  FIRE
+
+  SAY <One Liner>
+
+  END
+
+
+The details of the orders you can send to the server are listed below.
+All ordersets must begin with a USER command. The exception from
+this is if you issue a NEWUSER command to register a new user for
+the first time. No persons are allowed to have more than one
+user at the Firetop Mountain. Anyone who has that will be considered
+cheating. You can include blank lines between commands, and anything
+after a ";" on any line is ignored, except on a line that is part of a
+SAY, MESSAGE or ANNOUNCE command. Anything after an END command is ignored.
+
+Commands are not case sensitive.  Passwords _are_ case sensitive.
+Furthermore, the first character of a Name must be a capital letter
+(if you don't capitalize it, the server will).  Names and passwords
+can be made of alpha-numeric characters only.
+
+Each orderset should contain only one type of orders: administration
+orders or mage commands.  The exception is the USER command that all
+ordersets have to start with. An orderset that contains mage commands must
+have a MOVE or GAME or MAGE command at the top that specifies the game. You
+can only have one MOVE/GAME/MAGE command per orderset.
+
+You can only have one challenge-command (NEWGAME, ACCEPT, DECLINE,
+CHANGEGAME, OPPOSE, WITHDRAW) in each orderset.
+
+Each orderset should end with an END command.
+
+If there are any glaring errors in orders that the server receives, it
+will return them with an explanation of what is wrong, and you can try
+again.  It will pick up wrong passwords, or nonsense commands.  It
+will not prevent you from stabbing yourself, or curing your opponent,
+however.
+
+Once a correct orderset containing mage commands for a particular game
+has been received from you, you cannot submit a different orderset for
+that game until the round has been completed.  Sorcery is not an
+occupation where you can change you mind halfway through!
+
+Finally, the orders (anything enclosed in braces {} is optional):
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+NEWUSER <New UserName> <New Password>     e.g. NEWUSER Harry grnf
+
+This command should be used by new users that wish to establish a
+user at the Firetop Mountain. Note that having more than one user
+is considered cheating. Passwords _are_ case sensitive.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+USER <User Name> <Password>               e.g. USER Harry grnf
+
+This command must be the first command in all orders that you
+send to the Firetop Mountain, so that the server knows which
+user that is sending the orders.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+CHANGEUSER <New UserName>                 e.g. CHANGEUSER Osse
+
+If you do not like your username, you may change it with this
+command. This command should not be used often.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+SCORES {<Options>}                        e.g.  SCORES duel
+                                                SCORES melee
+
+Include the complete list of wizards, their scores and their status in
+your report.
+
+The game keeps two scores for each wizard: a 'duel' score and a
+'melee' score.  This is because the skills used in duels (2 player
+games) are rather different to those used in melees (games with more
+than 2 players).
+
+The options for the SCORES command are 'duel', 'melee' and 'all'.  If
+you don't give any options the server will try to guess which you
+meant based on your other orders.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+STANDINGS {<Options>}                     e.g.  STANDINGS all
+
+Identical to the SCORES order.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+GAMES {<Game Numbers>}                    e.g.  GAMES
+                                                GAMES 54 87 109
+
+If no game numbers are specified, include a complete list of the duels
+in progress, and their current status, and a list of past games for
+which there are records, in your report. Otherwise give you the same
+info for the list of games that you have specified.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+LIST {<Game Numbers>}
+
+Identical to the GAMES order.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+CHALLENGES
+
+Include a complete list of the challenges made, whether they are open
+or closed, and the mages allowed in each game, in your report.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+INFO {<Mage/User List>}                   e.g.  INFO
+                                          INFO Gandalf Froodal Harry
+
+Returns info about the mages and/or users mentioned in the list.
+If no list is given, it returns info about all the users.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+RULES
+
+Order a copy of these rules.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HELP
+
+The same as RULES. Order a copy of these rules.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+FAQ
+
+Order a copy of the Firetop Mountain Frequently Asked Questions file.
+(which includes answers as well!)
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+MESSAGE <Mage Name> <Recipients>
+
+Use this command to send an e-mail message to the owners of one or more
+mages or users (without having to find their e-mail address yourself).
+
+Any text in your orders after the MESSAGE command and up to the words
+
+END MESSAGE
+
+alone on a line will be sent to the recipients.  Each recipient may be
+either a mage name or a user name. Recipients names are to be
+separated by space.
+
+e.g.
+
+MESSAGE Gandalf  Froodal Harry
+That was a great game!   Let's do it again!
+END MESSAGE
+
+will send a message from Gandalf to the owners of Froodal and Harry.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ANNOUNCE <Game Numbers>
+
+Send an announcement to all participiants in one or more games.
+You can only send announcements to games in which you participate
+with a mage.
+
+Any text in your orders after the ANNOUNCE command and up to the words
+
+END ANNOUNCE
+
+on a line by itself will be sent to the recipients.
+
+e.g.
+
+ANNOUNCE 42
+It is not fair to attack my mage all of you at once.
+END ANNOUNCE
+
+will send this announcement to all players in game 42.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+RESEND <How Many>                         e.g.  RESEND 3
+
+This command asks the server to resend the last <How Many> emails that
+it sent you.
+
+If you don't specify <How Many>, it sends you the last email that it sent you.
+
+This command will only resend emails that were originally sent to the
+address that the server knows about for your user.  If you had submited
+orders from a different account and did not use the USER command,
+replies to those orders will not be resent.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+REPLAY <Game Number> {<Turn Number>}       e.g.  REPLAY 54 9T
+
+Replay a turn for you, exactly as the turn happened. If no turn
+number is given, replay the last turn if there is any. This command
+only works for games that are currently being played (the game is
+not finished yet).
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+SHOW <Game Numbers>                        e.g.  SHOW 54
+
+This command returns a summary of the specified game(s) - a
+round-by-round list of all the gestures and spells cast in a game.
+This terse summary is ideal for analysing a game, once you get used to
+the format.
+
+If the game has not started, this command returns a summary of the
+challenge status - all the details of who has accepted and what
+changes are proposed.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+DESCRIBE <Game Numbers>                    e.g.  DESCRIBE 54
+
+This command returns a complete list of all the events that occurred in
+the specified game.  This verbose, human readable, format is ideal for
+reading about what happened in a game without too much effort.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+SUBSCRIBE <Game Numbers>                    e.g.  SUBSCRIBE 54
+
+With this command you subscribe to the speciefied game(s).
+That is you get the same game reports as the players in the game
+for each turn in the game. This way you can observe a game "live"
+as it is being played on the server.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+STATS {Options}                           e.g. STATS SpellUse
+                                          or STATS Info WizActive
+
+This command returns the requested statistics/information about the
+Firetop Mountain server.  There are a number of groups of statistics:
+you can list the names of the groups you want to see.  If you don't
+specify which ones you will get them all (this is how to find out
+what statistics groups are available).
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+REGISTER <Mage Name>                      e.g. REGISTER Merlyn
+
+Use this command to register a new Wizard with the server.
+
+The first character of a <Mage Name> must be a capital letter
+(if you don't capitalize it, the server will). Names and passwords
+can be made of alpha-numeric characters only.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ADDRESS <New Address>                     e.g. ADDRESS camelot@uk.com
+
+Use this command to change the address that the server uses to mail
+you reports.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+VACATION <Days>                           e.g. VACATION 3
+
+This command will put all your mages on the vacation list for
+so many days as you specify. The autonagger will the not terminate
+you mages for being late in any games while you are on vacation.
+When you then give any new orders to the server again, it will
+assume that you are back from vacation.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+PASSWORD <New Password>                   e.g. PASSWORD FroppleBoz
+
+Use this command to change the password for your user.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+RETIRE <Mage Name>                        e.g. RETIRE Merlyn
+
+If you decide that your mage no longer wants to participate in battles,
+you can retire.
+
+If you have a positive score, it will remain in the Honour Roll,
+but people will no longer be able to challenge you.  If at any time
+you want your mage to come out of retirement, you can simply issue a
+challenge to someone else or accept a challenge.  It is preferable to
+retire rather than continually decline challenges.
+
+If you retire with zero score, your wizard is deemed to have left
+Firetop Mountain to go and seek further instruction before returning
+to try again.
+
+Your mage will be automatically retired after a period of inactivity.
+Retired mages will be automatically quitted after a longer period of
+inactivity.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+QUIT <Mage Name>                          e.g. QUIT Merlyn
+
+If you decide that your mage no longer wants to participate in battles,
+you can quit.
+
+Quitting is more permanent than retire, and in effect will kill off
+your mage. This is normally only for use if you no longer wish to play
+Firetop Mountain (but why :) ?!?).
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+QUIT
+
+If you no longer wish to play Firetop Mountain you must first QUIT
+all your mages, then you can submit a QUIT command without a mage
+name to terminate you user account. You can not quit if you still
+have one or more mages in play.
+
+We hope you enjoyed playing while it lasted, and you are always
+welcome to register again as a new user later.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+NEWGAME <Mage Name> <Options>
+  e.g. NEWGAME Merlyn CHALLENGE Froodal Gandalf
+
+  or NEWGAME Merlyn OPEN, LIMIT 4, COMMENT Looking for a fast battle!
+
+Use this command to challenge your opponent(s) to a battle.  You give
+your mage name first, then the details of the challenge.
+The first example challenges the wizards Froodal and Gandalf to a
+melee.  The second example announces a battle that anyone can join (OPEN), 
+that will commence when 3 other mages have joined in (LIMIT 4).
+
+You will be notified when your opponent(s) is/are ready for battle.
+
+Here is a complete list of the options.  Each must be separated by a
+comma when you submit your orders.
+
+     challenge <Name list>
+     add <Name list>
+     open {<Number>}
+     closed
+     exclude <Name list>
+     all
+     limit <Number>
+     nolimit
+     spellbook <Name of spell book>
+     authoritarian
+     democratic
+     comment
+
+Explanation of the options:
+
+  challenge <Name list>:
+  add <Name list>:
+    Use this option to list the mages you want to challenge.
+    ('add' is a shorthand for 'challenge')
+
+  open {<Number>}:
+    This option is to specify that you want the challenge to be
+    open to any mages that want to join. The optional number
+    is a maximum limit of how many mages controlled by a single
+    player that may accept the challenge. What most players want is
+    usually "open 1", so this is the default if you omit the number.
+    Use "open 0" if you want the number of mages pr. user to be
+    unlimited.
+
+  closed:
+    The opposite of an open game. Only those that are challenged may
+    join the game. This is the default behavior, so you do not have
+    to specify this option if you do not want to.
+
+  exclude <Name list>:
+    This option is to specify mages you do not want to include
+    in the challenge (this is useful only with an 'open' challenge).
+
+  all:
+    If you want to challenge all mages that are currently available.
+    This implies the option "open". If you want it different,
+    you may put a "closed" option after it. If opposite options
+    are specified, the last one always takes effect.
+
+  limit <Number>:
+    Set a limit to how many mages is accepted in the game. This must
+    be more than 1. When <Number> mages have accepted the challenge
+    (including the challenger), the rest will be excluded and the game
+    begins.
+
+  nolimit:
+    The game will not begin before all mages that have been challenged
+    have accepted to join.  If you set this option on an 'open' game,
+    then the game will never start automatically, since it will always
+    be waiting for more players to join.  You will be able to start it
+    with the 'start' option to the CHANGEGAME command, though (see
+    below).  This option is default, so you do not have to specify it
+    if you do not want to.
+
+  spellbook <Name of spell book>:
+    This will choose which spell book to use during the battle.
+    If the option is omitted, the standard spell book is used.
+    For now <Name of spell book> can be Classic, Standard or NoMonsters.
+
+  authoritarian:
+    Usually if any changes is made to the new game, the other players
+    (those who have accepted the challenge so far) get a chance to
+    say if they accept these new options or not. If this option is
+    set, no such democratic process takes place, and the mage who
+    initially set up the game gets to decide everything.
+
+  democratic:
+    This option is default, and does not need to be specified.
+    If someone want to change some options, the other players
+    are requested to accept or oppose the proposed changes to the game.
+
+  comment:
+    Use this option to attach a comment to the challenge.  This
+    comment will be included in any mail that players receive about the
+    challenge. This option must be the last - anything after the
+    'COMMENT' option is taken as part of the comment.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ACCEPT <Game Number> <Mage Name> {<Option>}
+  e.g. ACCEPT 10 Merlyn
+  or   ACCEPT 11 Merlyn CHANGE 2
+
+Use this command to accept a challenge.  You give the game number
+first, then your mage name, then your password.
+
+You can also use this option to accept a proposed change to a game
+(see CHANGEGAME below).  The possible <Option>s are:
+
+  change <number>:
+    Use this to specify which change you accept.
+
+  everything:
+    Use this to accept all changes ever proposed to the game.
+    (Both current and all future proposed changes.)
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+DECLINE <Game Number> <Mage Name>
+  e.g. DECLINE 10 Whimpo
+
+You use this command to decline a challenge.  If you have already
+accepted a challenge, but want to get out of it before it starts, you
+can also use this command.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+CHANGEGAME <Game Number> <Mage Name> <Options>
+  e.g. CHANGEGAME 10 Merlyn START
+
+Use this command to change a game, or at least propose a change to a
+game.
+
+Here is a complete list of the options.  Each must be separated by a
+comma when you submit your orders.
+
+     add <Name list>
+     challenge <Name list>
+     exclude <Name list>
+     start
+     all
+     open {<number>}
+     closed
+     limit <number>
+     nolimit
+     spellbook <Name of spell book>
+     authoritarian
+     democratic
+     comment
+
+Explanation of the options:
+
+  add <Name list>:
+  challenge <Name list>:
+    To add more mages to be challenged.
+    Handy if many of those originally challenged declines.
+    ('challenge' is a substitute for 'add')
+
+  exclude <Name list>:
+    This option is to specify which mages you do not want to include
+    in the challenge if it is an open challenge, or to exclude mages
+    that are challenged in a normal closed challenge that you do not
+    want to challenge after all for some reason.
+    Those who have already accepted the challenge cannot be excluded.
+
+  start:
+   Use this option to cause the game to start immediately.  All mages
+   who have not accepted are excluded from the game, and all proposed
+   (but not accepted) changes are abandoned: the battle commences with
+   the currently accepted mages and conditions.
+
+  open {<number>}:
+    This option is to specify that you want the challenge to be
+    open to any mages that want to join. The optional number
+    is a maximum limit of how many mages controlled by a single
+    player that may accept the challenge. What most players want is
+    usually "open 1", so this is the default if you omit the number.
+    Use "open 0" if you want the number of mages pr. user to be
+    unlimited.
+
+  closed:
+    The opposite of an open game. Only those that are challenged may
+    join the game.
+
+  all:
+    If you want to add all mages that are currently available to
+    the list of those that are challenged. This also implies a
+    change to "open".
+
+  limit <number>:
+    Set a limit to how many mages is accepted. Must be more than 1,
+    and not less than the number of mages that have already accepted
+    the challenge. When <number> mages have accepted the challenge
+    (including the challenger), the rest will be excluded and the game
+    begins.
+
+  nolimit:
+    Do not set any limit to the number of mages in the game.
+
+  spellbook <Name of spell book>:
+    Same as for the NEWGAME command. Change the current
+    choise of which spell book to use during the battle.
+    For now <Name of spell book> can be Classic, Standard or
+    NoMonsters.
+
+  authoritarian:
+    Same as for the NEWGAME command. Note that the one who initiated
+    the game will be in charge, not the one who proposed to set
+    this option.
+
+  democratic:
+    Change from authorative setup to democratic. See the same option
+    for the NEWGAME command.
+
+  comment:
+    Use this option to change the comment attached to the challenge.
+    This comment is included in any mail that players receive about
+    the challenge. This option must be the last - anything after the
+    'COMMENT' option is taken as part of the comment.
+
+If the game is democratic, each mage will have the chance to vote for
+or against your change (see the ACCEPT order).  When more than 50% of
+the mages have voted for it, it will be adopted. In case of a draw,
+the one who initated the challenge has a double vote.
+
+If the game is authoritarian, only the player who initated it will be
+able to make changes using CHANGEGAME.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+OPPOSE <Game Number> <Mage Name> CHANGE <Number>
+  e.g.   OPPOSE 11 Merlyn CHANGE 2
+
+Use this command to oppose a change to a game (see CHANGEGAME command).
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+WITHDRAW <Game Number> <Mage Name>
+  e.g. WITHDRAW 10 Merlyn
+
+Use this command to withdraw a challenge that you have previously
+issued.  This command completely cancels the game created by NEWGAME.
+
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+GAME <Game Number> <Mage Name>            e.g. GAME 1 Merlyn
+MOVE <Game Number> <Mage Name>            e.g. MOVE 1 Merlyn
+MAGE <Mage Name>                          e.g. MAGE Merlyn
+
+These commands are used to begin a normal orderset for each turn of a
+battle that has actually started.
+
+Orders that include one of these commands must end with an END
+command, and it can only be one GAME/MOVE/MAGE command in each mail.
+
+If at any time you just want to see the status of your game (to see if
+its waiting for your orders, for example) you can send in just a GAME
+command followed by an END command.
+
+The MOVE command is identical to the GAME command in every way, and is
+there as a synonym for historical reasons. With the newer MAGE command,
+you do not have to specify the game number, since the server keeps
+track of which games your mages are involved in.
+
+
+The following commands only make sense issued after a GAME command...
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+TURN <Turn Number>                        e.g.  TURN 10
+
+The TURN command is an optional command to tell the server what turn
+the orders are for.  When the server receives a TURN command, it
+checks to see if in fact the game in question is at the specified
+turn. If it is not, the orders are rejected.  This can be a useful
+insurance against e-mail problems.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+LH <Gesture>                              e.g. LH >
+RH <Gesture>                              e.g. RH P
+
+Use these commands to indicate what you want to do with each hand. If
+the server is expecting you to submit any orders, it will be expecting
+you to submit orders for both hands.  Orders which omit one hand will
+be rejected.  "RH" is used to indicate the right hand, and "LH" to
+indicate the left. The gestures are as described in the first section.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+TARGET <Hand> <Target Name>               e.g. TARGET LH Froodal
+
+Use this command to indicate where you want any actions associated
+with a particular hand to go.  Valid hands are LH, RH and BH. "BH"
+means "both hands" and is what is used if a spell is being activated
+as a result of a gesture requiring both hands.
+
+It is vital to note that all actions have a target whether you want
+them to or not, and the target for a given hand will be the default
+target for the spell for that hand unless you explicitly say
+otherwise.
+
+You can use any name that you see printed in the Status section of
+your report, as a valid target.  You can also target a monster that
+you think your opponent is about to create.  You do this by saying
+
+TARGET LH RH:BadGuy
+
+This says that you want to aim your Left Hand spell at the monster
+that BadGuy is about to create with his Right Hand.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+TARGET MonsterName VictimName        e.g. TARGET RedishGreenGoblin Merlyn
+
+This variation of the TARGET command is used to change the target of a
+monster.  Obviously it will only succeed if you are the controller of
+the monster.  Know that "no one" or "nobody" are valid targets.
+
+You can attempt to set the target of a monster that you are going to
+gain control of via Charm Monster.  If your charm succeeds, the
+monster will attack the target you specify.
+
+You can attempt also to set the target of a monster that is going to
+be created in the coming round.  You do this by saying
+
+TARGET RH:MyName UglyMage
+
+This says that you want the monster you are about to create with your
+Right Hand to attack UglyMage.
+
+(Note that this is very different to saying "TARGET RH UglyMage".  The
+latter command aims your Right Hand spell at UglyMage. If it is a
+summon spell, this would mean giving away your monster.)
+
+This means that you can actually charm and direct a monster that your
+opponent is going to create this round.  If you cast the Charm Monster
+with your Right Hand, and your opponent is casting Summon Goblin with
+his Left Hand, the commands might look like this:
+
+  CHOOSE RH Charm Monster
+
+  TARGET RH LH:BadGuy         ; we want to charm BadGuy's Left Hand monster
+
+  TARGET LH:BadGuy GreenOgre  ; we want his monster to attack GreenOgre
+
+Of course, he could cast Counter Spell at the monster he is about to
+create - this would thwart your Charm, and the monster would remain
+under his control!
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+CHOOSE <Hand> <Spell Name>                e.g. CHOOSE BH Magic Mirror
+
+As mentioned earlier, sometimes a given set of gestures could invoke
+more than one spell.  In this case, the wizard gets to choose which
+spell is to be cast - the CHOOSE order is used for this.  If your
+gestures result in a choice you were not expecting, you will receive
+an e-mail asking you to choose.  However, if you know that a choice
+will result, you can include the CHOOSE order in the same mail as the
+GESTURE orders _after_ both GESTURE orders.  This saves the exchange
+of an e-mail with the server.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+PERMANENT <Hand>                          e.g. PERMANENT LH
+
+The Permanency spell allows you to cast a spell with permanent effect.
+Use this order to specify that the given hand is now completing the
+spell which you would like to be permanent.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+PARALYZE <Hand> <Mage Name>               e.g. PARALYZE RH Gandalf
+
+The Paralyze spell allows you to freeze one of your opponent's hands.
+Use this order in the turn after you cast a Paralyze spell to specify
+which hand will be paralyzed.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+DIRECT <Hand> <Gesture> <Mage Name>       e.g. DIRECT LH P Gandalf
+
+The Charm Person spell allows you to take control of one of your
+opponent's hands.  Use this order in the turn after you cast a Charm
+Person to specify which of their hands you want to do what.  Note that
+you do not get to specify the target of that hand.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+DELAY <Hand>
+
+Use this command to indicate that the spell completed by <Hand> is to
+be saved up instead of cast immediately. (You can only do this if you
+have been the target of a Delay Effect spell in one of the previous
+three rounds). The spell _and_ its target are saved at this time.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+FIRE
+
+Use this command to cast the spell that you saved up using DELAY.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+SAY <One Liner>
+  e.g.  SAY "Ouch! I goofed that time!"
+
+Use this command to make your wizard say something on the next battle
+report.  Because spellcasting involves high concentration and
+incantation accompanying the gestures, a wizard can only say one thing
+to the opponent per round!
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+END
+
+You must end your orders with "END".
+The server does not look at anything after the END command.
+
+
+
+----------------------------------------------------------------------
+SPELL CASTING SERIES
+
+This table shows the gestures required to cast each spell.
+
+c D P W       Dispel Magic           P S D F          Charm Person
+c S W W S     Summon Ice Elemental   P S F W          Summon Ogre
+c W S S W     Summon Fire Elemental  P W P F S S S D  Finger Of Death
+c w           Magic Mirror           P W P W W c      Haste
+D F F D D     Lightning Bolt         S D              Magic Missile
+D F P W       Cure Heavy Wounds      S F W            Summon Goblin
+D F W         Cure Light Wounds      S P F P          Anti Spell
+D P P         Amnesia                S P F P S D W    Permanency
+D S F         Confusion              S P P F D        Time Stop
+D S F F F c   Disease                S P P c          Time Stop
+D W F F d     Blindness              S S F P          Resist Cold
+D W S S S P   Delay Effect           S W D            Fear
+D W W F W c   Raise Dead             S W W c          Fire Storm
+D W W F W D   Poison                 W D D c        + Lightning Bolt
+F F F         Paralysis              W F P            Cause Light Wounds
+F P S F W     Summon Troll           W F P S F W      Summon Giant
+F S S D D     Fireball               W P F D          Cause Heavy Wounds
+P             Shield                 W P P            Counter Spell
+p           ! Surrender              W S S c          Ice Storm
+P D W P       Remove Enchantment     W W F P          Resist Heat
+P P w s       Invisibility           W W P            Protection
+P S D D       Charm Monster          W W S            Counter Spell
+
+
+!   This is not a spell
++   Each wizard may use this spell once per battle, then the gestures have
+    no effect.
+
+
+The next table lists the spells in the order that they would take
+effect if they were all cast in the same round.  It also shows the
+default target for each spell (s - self, o - opponent).
+
+           s   Dispel Magic
+           s   Counter Spell
+           s   Magic Mirror
+           s   Summon Goblin
+           s   Summon Ogre
+           s   Summon Troll
+           s   Summon Giant
+               Summon Fire Elemental
+               Summon Ice Elemental
+           s   Raise Dead
+           s   Haste
+           s   Time Stop
+           s   Protection
+           s   Resist Heat
+           s   Resist Cold
+           o   Paralysis
+           o   Amnesia
+           o   Fear
+           o   Confusion
+           s   Charm Monster
+           o   Charm Person
+           o   Disease
+           o   Poison
+           s   Cure Light Wounds
+           s   Cure Heavy Wounds
+           o   Anti Spell
+           o   Blindness
+           s   Invisibility
+           s   Permanency
+           s   Delay Effect
+           o   Remove Enchantment
+           s   Shield
+           o   Magic Missile
+           o   Cause Light Wounds
+           o   Cause Heavy Wounds
+           o   Lightning Bolt
+           o   Fireball
+           o   Finger of Death
+               Fire Storm
+               Ice Storm
+
+----------------------------------------------------------------------
+
+EXAMPLE GAME
+
+To give you an idea how a game might proceed, here is an example game
+between two wizards "Froodal" and "Bung".  First, here are the orders
+that they had to give to get registered and get the game started:
+
+Froodal                                Bung
+----------                             -----------
+                                       newuser Bill heh
+newuser Frode w1n
+                                       register Bung
+register Froodal
+
+user Frode w1n
+NEWGAME Froodal challenge Bung
+
+                                       user Bill heh
+                                       accept 12 Bung
+
+
+At this stage, each player would receive an e-mail similar to this:
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+From: Firetop Mountain Referee <fm@gamerz.net>
+Subject: A Duel has Commenced!
+
+Froodal,
+
+Bung has accepted your challenge to a duel.
+
+The duel number is '12'.
+
+Bung now stands before you in the Graven Circle.
+
+On the Referee's command, you bow, and then you may commence casting at
+will...
+
+Duel Status for Froodal:
+
+ Froodal HP: 15 State: thinking (orders)
+
+  Right: B
+  Left:  B
+
+ Bung HP: 15 State: thinking
+
+  Right: B
+  Left:  B
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+You can see that they are told the game number, for reference in
+future orders, and the status of each player.  Each wizard starts with
+15 Hit Points (HP), representing the amount of damage that he can
+take.  The server is expecting orders from each player.  Each player
+has just bowed (indicated by the 'B' for each of his hands).
+
+Each player now goes on to submit a gesture for each hand each round.
+This is what might happen...
+
+Turn  Froodal                                Bung
+----  ----------                             -----------
+      LH      RH     HP                      LH      RH     HP
+1      W       D     15                       W       P*    15
+2      W       S     15                       W       S     15
+3      W       F*    14                       S*      D*    15
+4      S*      F     14                       S       >     15
+5      >       F*     9                       C*      C*     9
+6      C*      C*     9                       D       F      9
+7      P*      W      9                       P*      >      9
+8      P*      D      8                       W*      >      9
+9      >       D      8                       D       S      8
+10     C*      C*     7                       D       D      3
+11     W*      W*     7                       C*      C*    -2
+
+       Outright Victory to Froodal.
+
+
+A "*" shows a gesture that completes a spell.
+
+1) Froodal makes the classic "Disease" opening.  He is planning to
+cast Disease with his right hand, throwing in Confusion and Paralyze
+on the way ("DSFFFc").  He starts with a 'W' with his left hand,
+planning to use that as the beginnings of a Counter Spell ("WWS") for
+the third round, to counter any possible 3-gesture enchantments that
+Bung makes.
+
+Bung makes a less conventional opening - two defensive gestures.
+He does 'W' with his left hand for the same reason as Froodal.  He
+casts a shield with his right.  This is usually done in anticipation
+of the opponent opening with a stab.  However, Bung has something else
+in mind...
+
+2) In the second round Froodal continues as planned.  Bung sees the
+potential Confusion coming, and continues with his left hand Counter
+Spell.  With his right hand Bung follows the 'P' with an 'S' - he is
+leading towards Summon Ogre or Charm Person!
+
+3) Froodal is now under pressure.  He doesn't know what Bung will be
+doing with his right hand, and can see that whatever it is, it is
+going to complete in the 4th round instead of the third.  Furthermore,
+Bung is going to Counter his Confusion successfully.  Froodal
+continues with the Confusion anyhow (leading on to the Paralyze) and
+prolongs his left hand Counter Spell by one turn - wasting a gesture.
+
+Bung feels in control as he fires a Magic Missile with his right hand,
+leading on towards Charm Person in the next turn, and Counter's
+Froodal's Confusion with his left hand.  He is now up in HP on Froodal
+and is planning to continue to inflict damage as quickly as
+possible...
+
+4) This round Froodal completes his Counter Spell, with which he
+planned to counter Bung's Charm Person.  However, Bung saw that his
+spell was going to be countered so didn't bother completing it.
+Instead he stabs with his right, while progressing towards Ice Storm
+with his left!  However, the shield effect of Counter Spell prevents the
+damage, and Froodal breathes a sigh of relief!
+
+5) Froodal completes his Paralyze as Bung completes an Ice Storm.
+Froodal knows that next turn he is going to be clapping for the
+Disease, so anything other than a stab with his left hand would be
+wasted.  After the Ice Storm and stab, both mages are on 9 HP.
+
+6) Froodal now claps to complete the Disease spell.  This puts the
+pressure onto Bung.  Bung now has to kill Froodal or cure the Disease
+within the next 6 rounds.  He opts to try to cure the Disease with
+Dispel Magic - he has already made the 'c' last turn, so he goes on
+with the 'D' this turn.
+
+Meanwhile, Bung's right hand is Paralyzed into a 'F' gesture for this
+round by Froodal's Paralyze spell of last round.
+
+7) With Bung busy curing his disease, Froodal can take the
+initiative.  He starts a Lightning Bolt ("WDDc")  with his right hand.
+He can see that Bung is going for damage, and may try a stab, so he
+does a Shield with his left hand.   This pays off, because that is
+exactly what Bung does.
+
+8) Now Bung can complete his Dispel Magic.  This is another bad
+round for Froodal, because he can't defend himself with a Shield
+(since the Dispel Magic will negate the Shield) - but he doesn't
+realize it.  Bung makes the most of it, and stabs.
+
+9) Bung now needs to continue damaging Froodal.  He uses the last
+'W' of the Dispel Magic to move into a Lightning Bolt of his own, and
+prepares to cast a Summon Goblin with his right hand ("SFW").
+
+Froodal sees another opportunity for a stab, and takes it, while
+continuing with his Lightning Bolt.
+
+10) Froodal completes the Lightning Bolt, and Bung takes 5 more
+damage.  Bung realized he would not be able to cast Summon Goblin
+and at the same time complete the Lightening Bolt, so he opted
+for a Magic Missile with his right han instead, which struck home.
+Bung is still confident, because he expect his Lightning Bolt to
+be crippling Froodal next turn.
+
+11) Disaster for Bung!  Froodal immediately follows his Lightning
+Bolt with a Magic Mirror.  Bung's own Lightning Bolt is reflected back
+at him and he is killed!
+
+----------------------------------------------------------------------
+
+
+CREDITS
+
+This game was designed as a pen-and-paper game by Richard Bartle
+<76703.3042@compuserve.com>.
+
+The rules were taken from Duel Purpose fanzine (written by Mike Lean)
+and then scanned, OCRed, and edited by Andrew Buchanan
+<buchanan@heron.enet.dec.com> March 3, 1993.
+
+Martin Gregory <mgregory@ieee.org> found the rules in "The Games Cabinet"...
+
+ http://www.gamecabinet.com/
+ http://www.gamecabinet.com/rules/WavingHands.html
+
+... and adapted them for play-by-email, writing the original Firetop
+Mountain server.
+
+Steve Andrewartha <steve.andrewartha@its.utas.edu.au> was enthusiastic
+at the critical moment, and most importantly found a possible home for
+the game...
+
+Richard Rognlie <rrognlie@gamerz.net> kindly gave it a chance at
+life by agreeing to run it on his PBEM server (pbmserv@vtsu.prc.com),
+and now on his new server (fm@gamerz.net).
+
+Mel Nicholson <Mel.Nicholson@eng.sun.com> and Terje Bråten
+<terjebr@pvv.ntnu.no> had ideas about how the server could be improved
+and contributed code to suit, along with some bug fixes to the
+existing code.
+
+John Williams <jaw@us.dynix.com>, after getting the all time top
+score, did a major upgrade to the code to make it possible for
+multi-player battles to take place.  Terje took this code and breathed
+life into it by adding a new challenge system and many enhancements,
+and by running the test-site for the code we have today.
+
+Dom Gallagher <dom@stayfree.co.uk> and Andy Kurnia <akur@gamerz.net>
+proof-read the rules, and corrected a million typos! Andy Kurnia
+has also later contributed some new code. Robin Gyver
+<robin@kelp.boston.ma.us> has also helped proof-read the rules.
+
+Martin Gregory had for many years been maintaining his code
+as the sole Firetop Mountain Janitor, but then Terje Bråten
+became a co-Janitor together with Martin.
+
+Later Martin retired from his janitor duties, and Terje became
+the new main Firetop Mountain Janitor. Soon after Craig Ferguson
+<craigferguson@shaw.ca> and Andy Kurnia also joined in as members
+of the Firetop Mountain Janitor team.

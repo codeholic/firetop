@@ -1,0 +1,15 @@
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  Welcome.    This is the Test Firetop Mountain Server.
+                    (http://www.gamerz.net/~fm)
+
+  This is where new code are tested before moving to the main server.
+  Thank you for playing here, and thus help us developing new code.
+
+  New features to test on this server include:
+  - Code cleanup using perl-tidy.
+
+  Please report any problems to FM-Janitors@gamerz.net
+  making it clear that you are referring to the Test server.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

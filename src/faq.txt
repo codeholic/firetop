@@ -1,0 +1,277 @@
+             Firetop Mountain Frequently Asked Questions
+             -------------------------------------------
+
+Contents:
+
+1) What is 'Firetop Mountain'?
+
+2) What are the differences between FM and the original 'Waving Hands'?
+
+3) Why do we have to use 'Subject: FM Orders'?
+
+4) I sent the server some orders, and it seems to have used them
+   twice.   Why did it do this?  Can you help me?
+
+5) The server doesn't understand my orders.  Why not?
+
+6) I seem to have forgotten my password.  Can you help me?
+
+7) What is the auto-nagger?
+
+8) I'm going on vacation - can you save me from the auto-nagger?
+
+9) ****** What to do if you think you've found a bug in the server.
+
+10) I think so-and-so is cheating.  What will you do about it?
+
+11) I've got this great idea for a new spell - will you implement it?
+
+12) How can you afford to run this game for free?
+
+----------------------------------------------------------------------
+1) What is 'Firetop Mountain' (FM)?
+
+Firetop Mountain is a play-by-email implementation of Richard Bartle's
+'Waving Hands' pencil-and-paper game.
+
+[ There is another implementation of 'Waving Hands' called 'Spellcast'
+  - it is written for players using X windows on a network.  Firetop
+  Mountain has nothing to do with Spellcast - the authors of each did
+  not know the other existed. ]
+
+----------------------------------------------------------------------
+
+2) What are the differences between 'Firetop Mountain' and the
+   original 'Waving Hands'?
+
+   - Summon Elemental is two spells in FM
+     (Summon Fire Elemental and Summon Ice Elemental)
+   - Anti Spell is one gesture longer.
+   - There is another gesture for Time Stop.
+   - In WH the target of Charm Person/Paralyse is told which hand will
+     be affected before choosing the next turns gestures. In FM he is not.
+   - In WH Delayed Effect and Permanency latches onto the next suitable
+     spell cast. In FM you can choose a later spell. (Though both agree
+     that you cannot delay a permanent spell.)
+
+----------------------------------------------------------------------
+
+3) Why do we have to use 'Subject: FM Orders' instead of just replying
+   to email from the server?
+
+There are two reasons for this.  The first is that I only have one
+account ('fm@gamerz.net').  This means that the easiest way for me
+to run two or more servers (for example, one to try new rules) is to
+have players specify which one they want on the subject line.  This
+means that players need to be 'Subject aware'.
+
+The second reason is a sort of security.  Because the server only
+accepts emails with a certain subject line, and never sends out emails
+with that subject line, it is harder for someone nasty to trick the
+server into sending itself infinite emails saying 'huh?'.  Nothing is
+impossible, but at least this helps protect us.
+
+Now, since you've read this far, I'll tell you a little secret...
+
+The server _will_ actually accept subject lines like this:
+
+ Subject: Re: (whatever)
+
+... so you can reply to messages it sends you.
+
+And it will accept subject lines like this:
+
+ Subject: FM Challenges
+
+IE you can put any valid command on the subject line, after the 'FM'.
+
+However, I can't guarantee that it will always accept these - this is why
+it's not written in the rules.
+
+----------------------------------------------------------------------
+
+4) I sent the server some orders, and it seems to have used them
+   twice.   Why did it do this?  Can you help me?
+
+Sometimes email messages are duplicated in transit.  It's rare, but
+the server gets 10-20 emails per hour, so rare things do happen.  It's
+is not the server's fault - it's just something that happens to email.
+
+Once it has happened, it may be possible for me to rewind your game so
+that you can submit the orders that you meant to.  However, I will
+have to make time to do it.  I will have to get your opponent's
+permission.  This all takes time.
+
+It's much better to use the TURN command with every GAME command that
+you send.  
+
+This completely prevents the problem.
+
+----------------------------------------------------------------------
+
+5) The server isn't doesn't understand my orders - it says some
+   strange message about "Can't work out what game you meant" or
+   "Can't process ordinary orders with previous command(s)".
+
+The server is not too smart about figuring out your mistakes.  If you
+don't get the orders right, it is easily confused.  I'm working on this.
+
+In the meantime, check these two things before asking for help:
+
+  i) Does the order that you send in exactly match one of the order
+     examples in the rules?
+
+ ii) Is there extra junk in your orders (your .signature or
+     something)?    You need to have only valid orders in your email
+     up until the END command. (Some mailers adds HTML tags to your
+     mail when you send it. The server does not understand HTML in
+     mails, only plain text.)
+
+----------------------------------------------------------------------
+
+6) I seem to have forgotten my password.  Can you help me?
+
+I can.  But before you send me email, check again, remembering that
+passwords are case-sensitive.
+
+----------------------------------------------------------------------
+
+7) What is the auto-nagger?
+
+The auto-nagger is a program that runs from time to time and tries to
+make sure that games are progressing and that no 'dead wood' is left
+lying around on the server.  Some of the things it does are:
+
+ - sends reminder messages to mages in games who haven't submitted
+   orders for a while.
+
+ - terminates mages in games who haven't submitted orders for ages.
+
+ - retires active mages who haven't played for a while.
+
+ - terminates retired mages who haven't played for ages.
+
+----------------------------------------------------------------------
+
+8) I'm going on vacation - can you save me from the auto-nagger?
+
+Send a mail containing the command
+
+  VACATION <Days>
+
+where you specify how many days you will be away.
+
+----------------------------------------------------------------------
+
+9) What to do if you think you've found a bug in the server.
+
+If you think something is wrong with the server...
+
+  *** do not send any more orders for the game in question ***
+
+If you cause another turn to happen, it is unlikely I will be able to
+do anything about the problem - I probably won't even try.
+
+Instead, send some email to the Firetop Mountain Janitors
+(FM-Janitors@gamerz.net) telling me about it.
+
+Please include as much information as you can:
+
+ 1) The report that has a bug in it.  ALL of the report, especially those
+    funny numbers after the banner message at the top.
+ 
+    A previous report, before things went wrong, is also nice, if you have it.
+ 
+ 2) What part of the report you think is wrong.
+ 
+ 3) What you think it should have said (roughly).
+  
+If there is not really a bug, I will do my best to explain why.
+
+If there is a bug, I can usually rewind the game by one turn, find out
+what the problem is, and fix it.  But only if the game has not
+progressed another turn since you saw the bug.
+
+----------------------------------------------------------------------
+
+10) I think so-and-so is cheating.  What will you do about it?
+
+The easiest way to cheat at Firetop Mountain is to play two mages from
+different email accounts.  The server will not know that you are the
+same person, and will give you score accordingly.  Please don't do this.
+
+In the lifetime of Firetop Mountain - more that two years - I have yet
+to encounter deliberate cheating.  If I do, I will do all that I can
+to banish the perpetrator.  However, this can be just as hard as
+stopping them in the first place.  If you think someone is cheating,
+let me know, and just don't play with them.  Please don't write to
+fm-users about it - that is not the place to deal with it.
+
+(The other obvious way to cheat is to break into gamerz and modify game
+ files.  This would be seriously illegal - hardly worth it, don't you
+ think?)
+
+----------------------------------------------------------------------
+
+11) I've got this great idea for a new spell - will you implement it?
+
+Possibly.  However, there have been lots of great ideas that I haven't
+implemented yet, for many good reasons.  The main reason is that the
+game is very nicely balanced and challenging as it is, and I don't
+want to spoil this.  So a new idea would have to add a whole new
+element to the game to make it worthwhile... without spoiling the
+balance.  
+
+If you have a new spell idea, the first thing to do is to tidy it up,
+then present it as it would appear in the rules to the fm-users
+mailing list.  See what all the other mages think.  If there is a
+reasonable amount of support, then it may make it to my 'to do' list.
+
+(At present, the 'to do' list is quite long, because I have a very
+ slow ISP - see the next question).
+
+----------------------------------------------------------------------
+
+12) How can you afford to run this game for free?
+
+Actually, this isn't a Frequently Asked Question, except perhaps by me.
+
+The answer is (right now) 'only just'.
+
+Richard Rognlie provides the computer account on 'gamerz.net' for the game
+for free.  We all owe him thanks for that!
+
+However, it costs me about $250 per year for the internet access
+account that I use to access gamerz.net and run Firetop Mountain (I
+have to buy this account because I can't run FM from work!) plus about
+$100 in phone calls.
+
+Furthermore, the $250 only gets a very poor connection to the
+internet, meaning that I can only provide limited support.  A decent
+connection is around $400 per year.
+
+If every Firetop Mountain player sent me just $10 when they decide
+they like the game, I would be able to afford to keep running it
+easily, and afford a decent connection to be able to make improvements.
+
+(The best way to do this is actually to just fold up a $10 note or its
+ equivalent inside a greeting card inside an envelope and send it to
+ me.  If someone in the post office steals it, at least you feel good
+ for having sent it, and surely not every donation will be stolen, so
+ I'll be better off too!)
+
+If I disappear, FM will keep running for a while, then fall over due
+to some bug or hiccup on gamerz.net.  And of course, the support and
+new features that you get will disappear.  Your contribution will help
+keep this going.  I hope you think it's worth it.
+
+Thanks!
+
+Martin Gregory (Firetop Mountain Janitor)
+
+4 Delft Ct.
+Modbury Heights.
+SA 5092
+Australia.
+
+----------------------------------------------------------------------
